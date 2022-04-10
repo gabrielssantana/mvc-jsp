@@ -11,8 +11,20 @@ public class Product {
 	private BigDecimal Desconto;
 	private BigDecimal ValorAposDesconto;
 	
-	public Product(String nome, BigDecimal valor, String descricao, BigDecimal desconto, BigDecimal valorAposDesconto) {
+	public Product() {
 		super();
+	}
+	
+	public Product(Integer id, String nome, BigDecimal valor, String descricao, BigDecimal desconto, BigDecimal valorAposDesconto) {
+		ID = id;
+		Nome = nome;
+		Valor = valor;
+		Descricao = descricao;
+		Desconto = desconto;
+		ValorAposDesconto = valorAposDesconto;
+	}
+	
+	public Product(String nome, BigDecimal valor, String descricao, BigDecimal desconto, BigDecimal valorAposDesconto) {
 		Nome = nome;
 		Valor = valor;
 		Descricao = descricao;
@@ -43,7 +55,7 @@ public class Product {
 	public String getDescricao() {
 		return Descricao;
 	}
-	public void setDescrição(String descricao) {
+	public void setDescricao(String descricao) {
 		Descricao = descricao;
 	}
 	public BigDecimal getDesconto() {

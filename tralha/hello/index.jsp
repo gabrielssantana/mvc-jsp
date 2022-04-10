@@ -20,7 +20,6 @@ boolean teste = true;
 <body>
 <div>
 <h1>
-<%--Mano, isso aqui não consegue ser realtime --%>
 <%
 int local = 10;
 while (teste) {

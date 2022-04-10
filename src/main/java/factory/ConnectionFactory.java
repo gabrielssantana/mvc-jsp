@@ -13,11 +13,4 @@ public class ConnectionFactory {
 		Connection connection = DriverManager.getConnection(CONNECTION_STRING, USERNAME, PASSWORD);
 		return connection;
 	}
-	
-	public static void main(String[] args) throws Exception {
-		Connection connection = createConnectionToMySql();
-		if (connection != null)
-			connection.close();
-	}
-	
 }
